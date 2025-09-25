@@ -1,17 +1,12 @@
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main
 {
     public static void main(String[] args)
     {
-        File file = new File("przyklad.txt");
+        File file = new File("liczby.txt");
 
         //Zadanie 4.1
         System.out.println("Zadanie 4.1");
@@ -105,7 +100,7 @@ public class Main
             System.out.println("Nie znaleziono pliku.");
             e.printStackTrace();
         }
-
+        Collections.sort(liczby);
 
         int licznikTrojki = 0;
         System.out.println("Dobre trójki:");
@@ -129,31 +124,27 @@ public class Main
 
 
         int licznikPiatki = 0;
-        System.out.println("\nDobre piątki:");
+        //System.out.println("\nDobre piątki:");
 
         for (int a = 0; a < liczby.size(); a++) {
-            for (int b = 0; b < liczby.size(); b++) {
-                for (int c = 0; c < liczby.size(); c++) {
-                    for (int d = 0; d < liczby.size(); d++) {
-                        for (int e = 0; e < liczby.size(); e++) {
-                            int u = liczby.get(a);
-                            int w = liczby.get(b);
-                            int x = liczby.get(c);
-                            int y = liczby.get(d);
-                            int z = liczby.get(e);
+            int u = liczby.get(a);
+            for (int b = a + 1; b < liczby.size(); b++) {
+                int w = liczby.get(b);
+                if (w % u != 0) continue;
 
-                            if (u != w && u != x && u != y && u != z &&
-                                    w != x && w != y && w != z &&
-                                    x != y && x != z &&
-                                    y != z &&
-                                    w % u == 0 &&
-                                    x % w == 0 &&
-                                    y % x == 0 &&
-                                    z % y == 0) {
+                for (int c = b + 1; c < liczby.size(); c++) {
+                    int x = liczby.get(c);
+                    if (x % w != 0) continue;
+
+                    for (int d = c + 1; d < liczby.size(); d++) {
+                        int y = liczby.get(d);
+                        if (y % x != 0) continue;
+
+                        for (int e = d + 1; e < liczby.size(); e++) {
+                            int z = liczby.get(e);
+                            if (z % y == 0) {
                                 licznikPiatki++;
                                 //System.out.println(u + " " + w + " " + x + " " + y + " " + z);
-                                //System.out.println(licznikPiatki);
-
                             }
                         }
                     }
