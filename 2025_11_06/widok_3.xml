@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:stretchColumns="1">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:text="Logowanie"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Wpisz swój email"
+            android:inputType="textEmailAddress" />
+    </TableRow>
+
+    <TableRow android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/textViewPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasło:" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="Wpisz swoje hasło"
+            android:inputType="textPassword" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="Zaloguj" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:text="Nie pamiętasz hasła?"
+            android:textColor="?android:attr/textColorLink" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Nie masz konta? Zarejestruj się"
+            android:textColor="?android:attr/textColorLink" />
+    </TableRow>
+
+</TableLayout>
