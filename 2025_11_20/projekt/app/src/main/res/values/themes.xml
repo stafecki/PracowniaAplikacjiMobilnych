@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Projekt" parent="Theme.Material3.Light.Dialog">
+        <!--Wartoci parent:
+        MOTYW 1: Theme.MaterialComponents.Light
+        MOTYW 2: Theme.MaterialComponents
+        MOTYW 3: Theme.Material3.Dark
+        MOTYW 4: Theme.MaterialComponents.Light.Bridge
+        MOTYW 5: Theme.MaterialComponents.Bridge
+        MOTYW 6: Theme.Material3.DayNight.NoActionBar
+        MOTYW 7: Theme.Material3.Light.Dialog
+        -->
+
+
+    </style>
+
+    <style name="Theme.Projekt" parent="Base.Theme.Projekt" />
+</resources>
+    
