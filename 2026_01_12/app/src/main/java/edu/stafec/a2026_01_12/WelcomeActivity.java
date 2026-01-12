@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,9 @@ public class WelcomeActivity extends AppCompatActivity {
         });
 
         Button logoutButton = findViewById(R.id.buttonLogout);
+        TextView welcomeTextView = findViewById(R.id.textViewWelcomeEmail);
+        String email = getIntent().getStringExtra("email");
+        welcomeTextView.setText(welcomeTextView.getText() + email);
         logoutButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
