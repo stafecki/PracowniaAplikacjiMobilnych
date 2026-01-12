@@ -1,5 +1,7 @@
 package edu.stafec.a2026_01_12;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -41,17 +43,49 @@ public class MainActivity extends AppCompatActivity {
                         String emailText = email.getText().toString();
                         String pass1 = password.getText().toString();
                         String pass2 = confirmPassword.getText().toString();
-                        if (!emailText.contains("@")){
+                        /*if (!emailText.contains("@")){
                             result.setText("Nieprawidłowy adres e-mail");
+                            return;
+                        } - to bylo w zadaniu inf04, zmienione na regex*/
+                        if(!android.util.Patterns.EMAIL_ADDRESS.matcher(emailText).matches()){
+                            showErrorMessage("Nieprawidłowy adres e-mail", result);
                             return;
                         }
                         if(!pass1.equals(pass2)){
-                            result.setText("Hasła różnią się");
+                            showErrorMessage("Hasła różnią się", result);
                             return;
                         }
+                        if(!isValidPassword(pass1)){
+                            showErrorMessage("Hasło musi mieć co najmniej 8 znaków, zawierać literę, wielką literę i cyfrę", result);
+                            return;
+                        }
+
                         result.setText("Witaj " + emailText);
+
+                        Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                        intent.putExtra("email", emailText);
+                        startActivity(intent);
                     }
                 }
         );
+
+    }
+    private boolean isValidPassword(String password) {
+        if (password.length() < 8) return false;
+        boolean hasLetter = false;
+        boolean hasBigLetter = false;
+        boolean hasDigit = false;
+        for (char c : password.toCharArray()) {
+            if (Character.isLowerCase(c)) hasLetter = true;
+            else if (Character.isUpperCase(c)) hasBigLetter = true;
+            else if (Character.isDigit(c)) hasDigit = true;
+            if (hasLetter && hasDigit && hasBigLetter) return true;
+        }
+        return false;
+    }
+
+    private void showErrorMessage(String message, TextView result) {
+        result.setText(message);
+        result.setTextColor(Color.RED);
     }
 }
