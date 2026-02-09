@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Base.Theme._2026_02_09" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+    <style name="Theme._2026_02_09" parent="Base.Theme._2026_02_09" />
+
+</resources>
