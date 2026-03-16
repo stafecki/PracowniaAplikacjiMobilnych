@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2026_03_16</string>
+    <string name="title_activity_main">Wizyta u weterynarza</string>
+    <string name="owner_hint">Imię i nazwisko właściciela&#8230;</string>
+    <string name="species_label">Gatunek</string>
+    <string name="age_label">Ile ma lat?</string>
+    <string name="age_default">0</string>
+    <string name="symptoms_hint">Cel wizyty</string>
+    <string name="time_default">16:00</string>
+    <string name="submit_button">OK</string>
+</resources>
