@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">2026_03_23</string>
+    <string name="long_text">
+        Android to mobilny system operacyjny stworzony przez Google, oparty na jądrze Linux.
+    Jest wykorzystywany przede wszystkim w smartfonach i tabletach, ale także w telewizorach,
+    samochodach i urządzeniach IoT.\n\n
+    Historia Androida sięga 2003 roku, kiedy Andy Rubin założył firmę Android Inc.
+    W 2005 roku Google przejęło tę firmę, a w 2008 roku zadebiutował pierwszy telefon
+    z Androidem – HTC Dream.\n\n
+    Android Studio to oficjalne środowisko programistyczne (IDE) do tworzenia aplikacji
+    na Androida. Zostało wydane w 2013 roku i zastąpiło wcześniejszy plugin do Eclipse.
+    Opiera się na IntelliJ IDEA i oferuje m.in. edytor layoutów, emulator Androida
+    oraz narzędzia do debugowania i profilowania aplikacji.\n\n
+    Aplikacje na Androida są pisane głównie w języku Kotlin lub Java. Kotlin jest
+    obecnie preferowanym językiem, oficjalnie rekomendowanym przez Google od 2017 roku.
+    Jest bardziej zwięzły, bezpieczniejszy pod względem null-safety i w pełni
+    interoperacyjny z Javą.\n\n
+    Każda aplikacja składa się z komponentów: Activity (ekrany), Fragment (części ekranu),
+    Service (procesy w tle), BroadcastReceiver (nasłuchiwanie zdarzeń) oraz
+    ContentProvider (udostępnianie danych między aplikacjami).
+    </string>
+</resources>
