@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2026_04_13</string>
+    <string name="name_label">Imię: </string>
+    <string name="email_label">Adres e-mail: </string>
+    <string name="counter_status">Kliknąłeś przycisk %1$d razy</string>
+    <string name="welcome_message">Witaj, %1$s! Twój adres e-mail to: %2$s</string>
+    <string name="button_text">zwiększ liczbę</string>
+</resources>
