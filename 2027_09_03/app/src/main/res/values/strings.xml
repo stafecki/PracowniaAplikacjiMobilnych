@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">2027_09_03</string>
+    <string name="label">Gra w kości. Autor 0000000000</string>
+    <string name="button_text">RZUĆ KOŚĆMI</string>
+    <string name="throw_result">Wynik tego losowania: </string>
+    <string name="game_result_text">Wynik gry: </string>
+    <string name="reset_button_text">RESETUJ WYNIK</string>
+</resources>

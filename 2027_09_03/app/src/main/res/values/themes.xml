@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._2027_09_03" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme._2027_09_03" parent="Base.Theme._2027_09_03" />
+    <style name="AllViews">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="Images">
+        <item name="android:layout_margin">9dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+</resources>

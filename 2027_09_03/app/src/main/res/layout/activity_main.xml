@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label"
+        android:background="@color/brown"
+        android:textColor="@color/white"
+        style="@style/AllViews"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/throwButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        android:backgroundTint="@color/chocolate"
+        style="@style/AllViews"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        style="@style/AllViews">
+
+        <ImageView
+            android:id="@+id/diceImage1"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/question"
+            style="@style/Images"
+            />
+
+        <ImageView
+            android:id="@+id/diceImage2"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/question"
+            style="@style/Images"/>
+
+        <ImageView
+            android:id="@+id/diceImage3"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/question"
+            style="@style/Images"/>
+
+        <ImageView
+            android:id="@+id/diceImage4"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/question"
+            style="@style/Images"/>
+
+        <ImageView
+            android:id="@+id/diceImage5"
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/question"
+            style="@style/Images"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/throwResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/throw_result"
+        style="@style/AllViews"/>
+
+    <TextView
+        android:id="@+id/finalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_result_text"
+        style="@style/AllViews"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button_text"
+        android:backgroundTint="@color/chocolate"
+        style="@style/AllViews"/>
+
+
+</LinearLayout>
