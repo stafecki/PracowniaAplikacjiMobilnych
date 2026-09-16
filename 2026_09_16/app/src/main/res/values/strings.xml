@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">2026_09_16</string>
+    <string name="app_label">Urządzenia domowe</string>
+    <string name="author_text">Autor: 00000000000</string>
+    <string name="washing_machine_text">Pralka</string>
+    <string name="laundry_hint">Podaj nr prania 1..12</string>
+    <string name="confirm_button_text">Zatwierdź</string>
+    <string name="laundry_number_text">Numer prania: nie podano</string>
+    <string name="vacuum_text">Odkurzacz</string>
+    <string name="start_button_text">Włącz</string>
+    <string name="vacuum_state">Odkurzacz wyłączony</string>
+    <string name="vacuum_status">Status: naładowany</string>
+</resources>
