@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">2026_09_23</string>
+    <string name="title_text">Właściwości czcionki</string>
+    <string name="size_text">Rozmiar:</string>
+    <string name="quote_text">Dzień dobry</string>
+    <string name="button_text">>></string>
 </resources>
