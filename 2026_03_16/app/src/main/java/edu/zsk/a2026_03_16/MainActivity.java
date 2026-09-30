@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     .setContentTitle("Zgłoszenie przyjęte")
                     .setContentText(summary)
                     .build();
+            
             manager.notify(1, notification);
         });
     }
