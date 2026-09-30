@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">2026_09_30</string>
+    <string name="edit_text_hint">Nowy element</string>
+    <string name="button_text">Dodaj</string>
+</resources>
