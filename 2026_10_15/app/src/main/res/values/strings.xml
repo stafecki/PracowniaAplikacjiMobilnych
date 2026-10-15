@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2026_10_15</string>
+    <string name="app_title">Domek w górach</string>
+    <string name="like_button">POLUB</string>
+    <string name="delete_button">USUŃ</string>
+    <string name="save_button">ZAPISZ</string>
+    <string name="likes_text">0 polubień</string>
+    <string name="description_label">Opis</string>
+    <string name="description_text">Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych</string>
+    <string name="image_desc">Widok gór</string>
+</resources>
