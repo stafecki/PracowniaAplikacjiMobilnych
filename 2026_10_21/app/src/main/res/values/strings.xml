@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">inf04_weterynarz</string>
+    <string name="app_title">Wizyta u weterzynarza</string>
+    <string name="edittext_hint">Imię i nazwisko właściciela...</string>
+    <string name="listview_title">Gatunek</string>
+    <string name="age_label">Ile ma lat? </string>
+    <string name="visit_hint">Cel wizyty</string>
+    <string name="button_text">OK</string>
+    <string name="initialAge">0</string>
+    <string name="initialTime">16:00</string>
+</resources>
