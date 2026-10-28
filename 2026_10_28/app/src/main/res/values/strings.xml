@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">2026_10_28</string>
+    <string name="key_value_label">Podaj wartość klucza</string>
+    <string name="text_label">Podaj tekst</string>
+    <string name="result_label">Tekst zaszyfrowany</string>
+    <string name="encrypt_button">Zaszyfruj</string>
+    <string name="save_to_file_button">Zapisz szyfr w pliku</string>
+    <string name="nothing_to_save">Brak szyfru do zapisania</string>
+    <string name="save_success">Zapisano plik</string>
+    <string name="save_error">Błąd zapisu pliku</string>
+</resources>

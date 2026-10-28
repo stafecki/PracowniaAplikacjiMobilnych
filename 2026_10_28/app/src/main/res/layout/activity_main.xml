@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/CadetBlue"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key_value_label"
+        android:textSize="25sp"
+        android:textColor="@color/AntiqueWhite"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/key_value_edit_text"
+        android:inputType="text"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label"
+        android:textSize="25sp"
+        android:textColor="@color/AntiqueWhite"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/text_value_edit_text"
+        android:inputType="textMultiLine"
+        android:background="@color/white"
+        android:gravity="start"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encrypt_button"
+        android:text="@string/encrypt_button"
+        android:backgroundTint="@color/LightBlue"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_label"
+        android:textSize="25sp"
+        android:textColor="@color/AntiqueWhite"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/result_text_view"
+        android:background="@drawable/rounded_border"
+        android:gravity="start"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/AliceBlue"
+        android:padding="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_button"
+        android:text="@string/save_to_file_button"
+        android:backgroundTint="@color/LightBlue"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
