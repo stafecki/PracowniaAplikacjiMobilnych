@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wzornik kolorów RGB</string>
+    <string name="title">Wzornik kolorów RGB. Wykonał 00000000000</string>
+    <string name="pick_prompt">Dobierz kolor suwakami i zapisz przyciskiem:</string>
+    <string name="pick_button">Pobierz</string>
+    <string name="default_rgb">255, 255, 255</string>
+    <string name="initial_value">255</string>
+    <string name="rgb_format">%1$d, %2$d, %3$d</string>
+</resources>
