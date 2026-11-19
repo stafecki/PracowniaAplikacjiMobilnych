@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dodaj pracownika</string>
+    <string-array name="positions">
+        <item>Kierownik</item>
+        <item>Starszy programista</item>
+        <item>Młodszy programista</item>
+        <item>Tester</item>
+    </string-array>
+</resources>

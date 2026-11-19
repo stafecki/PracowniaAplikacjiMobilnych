@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0C4DE"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj pracownika"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Grupa: Dane Pracownika -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#33FFFFFF"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dane Pracownika"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Imię"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nazwisko"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Stanowisko"
+                android:textColor="#000000" />
+
+            <Spinner
+                android:id="@+id/spinnerPosition"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/positions" />
+        </LinearLayout>
+
+        <!-- Grupa: Generowanie hasła (pod grupą Dane Pracownika) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#33FFFFFF"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generowanie hasła"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Ile znaków?"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editPasswordLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="none"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/checkLetters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Małe i wielkie litery"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkDigits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cyfry"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Znaki specjalne"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/buttonGenerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#4682B4"
+                android:text="Generuj hasło"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Rozpychacz: przycisk Zatwierdź zawsze na samym dole -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4682B4"
+            android:text="Zatwierdź"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
